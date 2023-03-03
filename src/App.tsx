@@ -78,9 +78,9 @@ function App() {
   return(
     <div>
       <form onSubmit={handleSubmit}>
-        <input type='text' value={query} onChange={(e) => handleQueryChange} placeholder="Enter a search query" />
-        <input type='text' value={language} onChange={(e) => handleLanguageChange} placeholder="Enter a searh language" />
-        <input type='text' value={stars} onChange={(e) => handleStarsChange} placeholder="Enter a search stars" />
+        <input type='text' value={query} onChange={(e) => handleQueryChange(e)} placeholder="Enter a search query" />
+        <input type='text' value={language} onChange={(e) => handleLanguageChange(e)} placeholder="Enter a searh language" />
+        <input type='text' value={stars} onChange={(e) => handleStarsChange(e)} placeholder="Enter a search stars" />
         <button type='submit'>Search</button>
       </form>
       {results.map((repo) => (
